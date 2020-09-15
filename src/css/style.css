@@ -17,7 +17,10 @@ html, body{
     background-color: #fff;
     padding: 5px;
     border-radius: 100px;
-    border: 5px solid green;
+    border: 5px solid;
+}
+.imageWrap img {
+    border-radius: 100px;
 }
 .imageDetail {
     clear: both;
@@ -39,12 +42,12 @@ html, body{
     border-color: blue !important;
 }
 
-/* .death {
-    border-color: gray !important;
+.death {
+    background-color: gray !important;
 }
 .alive {
-    border-color: green !important;
-} */
+    background-color: green !important;
+}
 .female {
     box-sizing: border-box;
     border-color: pink !important;

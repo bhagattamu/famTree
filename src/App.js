@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Heading } from './Component/StyledComp';
 import FamilyTree from './Component/FamilyTree';
 import { getData } from './data';
+import { FamilyContext } from './Context/family';
 
 function App() {
   const [treeData, setTreeData] = useState([]);
@@ -70,7 +71,9 @@ function App() {
         <Heading>d3-dtree Family Tree Example</Heading>
         <Row>
           <Col>
-            <FamilyTree data={treeData} />
+            <FamilyContext.Provider value={{data: treeData}}>
+              <FamilyTree />
+            </FamilyContext.Provider>
           </Col>
         </Row>
       </Container>
