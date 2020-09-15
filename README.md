@@ -9,6 +9,7 @@ It uses:
 * [ReactJS](https://reactjs.org) - A Javascript Library for building user interfaces
 * [d3](https://d3js.org) - A library for data visualization
 * [d3-dtree](https://github.com/ErikGartner/dTree/blob/master/README.md) - A library for visualizing data trees with multiple parents built on top of D3
+* [react-device-detect](https://github.com/duskload/react-device-detect) - Detect device, and render view according to the detected device type
 
 ### Installation
 
