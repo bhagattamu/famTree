@@ -6,7 +6,7 @@ const FamilyTree = ({data}) => {
 
     useEffect(() => {
         const graphBlock = document.getElementById(`graph`);
-        // remove childNode which is added in initial render when data= empty
+        // remove childNode which is added in initial render when data is empty
         if(graphBlock.hasChildNodes())
             graphBlock.childNodes.forEach(childNode => graphBlock.removeChild(childNode))
         const coreTree = dTree.init(data, {
