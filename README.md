@@ -6,9 +6,9 @@ Demo is available on [fam-tree](https://fam-tree-bhagat.herokuapp.com/)
 
 It uses:
 
-* [ReactJS] - A Javascript Library for building user interfaces
-* [d3] - A library for data visualization
-* [d3-dtree] - A library for visualizing data trees with multiple parents built on top of D3
+* [ReactJS](https://reactjs.org) - A Javascript Library for building user interfaces
+* [d3](https://d3js.org) - A library for data visualization
+* [d3-dtree](https://github.com/ErikGartner/dTree/blob/master/README.md) - A library for visualizing data trees with multiple parents built on top of D3
 
 ### Installation
 
@@ -44,9 +44,3 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-    [ReactJS]: <https://reactjs.org/>
-    [d3]: <https://d3js.org/>
-    [d3-dtree]: <https://github.com/ErikGartner/dTree>
-   
