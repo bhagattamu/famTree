@@ -4,9 +4,8 @@ import * as dTree from 'd3-dtree';
 import { useFamilyContext } from '../Context/family';
 
 const FamilyTree = () => {
-    const store = useFamilyContext(); 
-    console.log(store);
-    const data = store.data;
+    const { data } = useFamilyContext(); 
+    
     useEffect(() => {
         const graphBlock = document.getElementById(`graph`);
         // remove childNode which is added in initial render when data is empty
