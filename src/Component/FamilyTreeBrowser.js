@@ -56,8 +56,8 @@ const FamilyTree = () => {
                 }
             }
         });
-        coreTree.zoomToFit(500)
-        //coreTree.resetZoom();
+        coreTree.zoomToFit(1000)
+        //coreTree.zoomToNode(1)
     }, [data] )
     return(
         <div id="graph" />

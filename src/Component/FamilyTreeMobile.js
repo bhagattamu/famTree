@@ -56,7 +56,7 @@ const FamilyTree = () => {
                 }
             }
         });
-        coreTree.zoomToFit(500)
+        //coreTree.zoomToFit(500)
         //coreTree.resetZoom();
     }, [data] )
     return(
