@@ -1,14 +1,12 @@
-import { v4 as uuidV4 } from 'uuid';
-
-const dhuliId = uuidV4();
-const spouseId = ["dhuli" + uuidV4(), "dhuli" + uuidV4()];
+const dhuliId = 'dhuli_id';
+const spouseId = ["spouse1_id", "spouse2_id"];
 const childId = [
-    "dhuli" + uuidV4(), // Dil Bahadur Gurung
-    "dhuli" + uuidV4(), // Bil Bahadur Gurung
-    "dhuli" + uuidV4(), // Dhan Maya Gurung
-    "dhuli" + uuidV4(), // Gam Bahadur Gurung
-    "dhuli" + uuidV4(), // Sanu Phupu Gurung
-    "dhuli" + uuidV4() // Bhoj Bahadur Gurung
+    "dil_id",
+    "bil_id",
+    "dhan_id",
+    "gam_id",
+    "sanu_id",
+    "bhoj_id"
 ];
 const data = [
     {
