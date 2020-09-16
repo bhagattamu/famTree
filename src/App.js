@@ -7,6 +7,7 @@ import { FamilyContext } from './Context/family';
 
 function App() {
   const [treeData, setTreeData] = useState([]);
+  const [rawData, setRawData] = useState([]);
   
   const getRoot = data => {
     //let rootId = [];
@@ -62,6 +63,7 @@ function App() {
       let tree = [];
       tree.push(constructedTreeData)
       setTreeData(tree);
+      setRawData(data);
     })
   }
   useEffect(getTreeData,[])
@@ -71,7 +73,7 @@ function App() {
         <Heading>d3-dtree Family Tree Example</Heading>
         <Row>
           <Col>
-            <FamilyContext.Provider value={{data: treeData}}>
+            <FamilyContext.Provider value={{data: treeData, rawData, setRawData, setData: setTreeData,constructTreeData }}>
               <FamilyTree />
             </FamilyContext.Provider>
           </Col>

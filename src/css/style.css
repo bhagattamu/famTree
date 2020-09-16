@@ -57,4 +57,8 @@ svg {
     border-style: solid;
     border-width: 1px;
 }
+.detail-column-name, .detail-column-value {
+    padding: 5px;
+    margin: 5px;
+}
 

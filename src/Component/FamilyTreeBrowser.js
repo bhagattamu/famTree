@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../loader"; // To make d3 and lodash in windows scope which is required for d3-dtree lib
 import * as dTree from 'd3-dtree';
 import { useFamilyContext } from '../Context/family';
+import DetailModal from '../Component/DetailModal';
 
 const FamilyTree = () => {
     const { data } = useFamilyContext(); 
-    
+    const [detailModalOpen, setDetailModalOpen] = useState(false);
+    const [detailData, setDetailData] = useState({});
+
     useEffect(() => {
         const graphBlock = document.getElementById(`graph`);
         // remove childNode which is added in initial render when data is empty
@@ -20,7 +23,9 @@ const FamilyTree = () => {
             nodeWidth: 200,
             callbacks: {
                 nodeClick: function(name, extra, id) {
-                    console.log(extra.imageUrl);
+                    setDetailModalOpen(true);
+                    setDetailData(extra);
+                    //console.log(extra.imageUrl);
                 },
                 textRenderer: function(name, extra, textClass, nodeClass) {
                 // THis callback is optinal but can be used to customize
@@ -59,7 +64,10 @@ const FamilyTree = () => {
         //coreTree.zoomToNode(1)
     }, [data] )
     return(
-        <div id="graph" />
+        <>
+            <div id="graph" />
+            <DetailModal show={detailModalOpen} handleClose={() => setDetailModalOpen(false)} detailData={detailData} />
+        </>
     )
 }
 
