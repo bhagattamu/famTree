@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 export const DetailRow = ({label,columnName, initColumnValue, update, updatedValue, setUpdatedValue}) => {
     const [columnValue, setColumnValue] = useState('');
-    
+
     useEffect(() => {
         setColumnValue(initColumnValue)
     }, [initColumnValue]);
@@ -40,6 +40,7 @@ export const DetailRow = ({label,columnName, initColumnValue, update, updatedVal
                         set(obj.properties === '' ? `${property}` : obj.properties + `.${property}`, valArr[index], payload)
                     ))
                 }
+                return 0;
             })
             setUpdatedValue({
                 ...updatedValue, 

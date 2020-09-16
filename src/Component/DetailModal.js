@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { DetailRow, DetailImage } from './DetailRow';
-import styled from 'styled-components';
 import { useFamilyContext } from '../Context/family';
 
 const DetailModal = ({show, handleClose, detailData}) => {
@@ -15,7 +14,6 @@ const DetailModal = ({show, handleClose, detailData}) => {
         lastName,
         familyName,
         origin,
-        marriages,
         imageUrl
     } = detailData;
 
