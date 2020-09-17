@@ -42,6 +42,7 @@ const DetailModal = ({show, handleClose, detailData}) => {
                     return d;
                 })
             ]);
+            setUpdated({});
             handleClose();
         }
         setUpdate(!update);
