@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/famTree/static/css/main.6f39aa7d.css",
-    "main.js": "/famTree/static/js/main.d6f3a0be.js",
+    "main.js": "/famTree/static/js/main.2d1565fb.js",
     "static/media/logo.svg": "/famTree/static/media/logo.2d27ead7c10f774c5306bcf3c257a728.svg",
     "index.html": "/famTree/index.html",
     "main.6f39aa7d.css.map": "/famTree/static/css/main.6f39aa7d.css.map",
-    "main.d6f3a0be.js.map": "/famTree/static/js/main.d6f3a0be.js.map"
+    "main.2d1565fb.js.map": "/famTree/static/js/main.2d1565fb.js.map"
   },
   "entrypoints": [
     "static/css/main.6f39aa7d.css",
-    "static/js/main.d6f3a0be.js"
+    "static/js/main.2d1565fb.js"
   ]
 }
